@@ -1,0 +1,51 @@
+.menu {
+    position: fixed;
+    top: 4%;
+    right: 0;
+    left: 0;
+    font-size: 3.7vw;
+    line-height: 5vh;
+    font-weight: 900;
+/*    background: #FFF;
+    opacity: 0.8;*/
+    z-index: 2;
+    overflow-x: auto;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.menu::-webkit-scrollbar {
+    width: 0;
+}
+
+.menu-item {
+    display: inline-block;
+    padding: 1vh;
+    padding-left: 6vw;
+}
+
+.menu-item-text {
+    color: #fff;
+    text-decoration:none;
+}
+
+.menu-item-active {
+    font-weight: 900;
+    text-decoration: none;
+    padding-bottom: 3px;
+    border-bottom: 3px solid #FFF;
+}
+
+.menu-last {
+    padding-right: 6vw;
+}
+
+@media (min-width: 601px) {
+    .menu {
+        font-size: 3vw;
+        line-height: 4vh;
+    }
+    .menu-item {
+        padding: 1vh 3vw;
+    }
+}
