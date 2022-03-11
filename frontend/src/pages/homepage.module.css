@@ -1,0 +1,13 @@
+.ha {
+  position: fixed;
+  left: 50%;
+  transform-origin: 50% 0;
+  z-index: -1;
+  display: inline-block;
+  width: 500px;
+  height: 500px;
+  padding: 0;
+  margin: 0;
+  background-image: url(../assets/img/sprite-home.png);
+  /* background-image: url(./img/sprite-home.png); */
+}

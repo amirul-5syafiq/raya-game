@@ -60,7 +60,7 @@ body {
   font-size: 3.5vw;
   line-height: 5vw;
   /* background-color: #000; */
-  background-image: url(./components/layout/img/bg.png);
+  background-image: url(./assets/img/bg.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
