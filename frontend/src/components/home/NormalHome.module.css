@@ -1,0 +1,93 @@
+.coin {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  font-size: 4.5vw;
+  line-height: 8vw;
+  width: 100%;
+}
+
+.containerCoin {
+  position: relative;
+  display: inline-block;
+  width: 38%;
+  max-width: 300px;
+  margin: 0;
+  background-image: url(../../assets/img/chances.png);
+  background-size: 100% 100%;
+}
+.containerCoin span {
+  font-size: 7vw;
+  font-weight: 900;
+  line-height: 12vw;
+}
+
+.homeFooterContent {
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.btnPlay {
+  width: 80vw;
+  max-width: 420px;
+}
+
+.linkHow, .linkTnc {
+  cursor: pointer;
+  font-size: 4vw;
+  padding-top: 0;
+  margin: 10px;
+  text-decoration: underline;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 601px) {
+  .coin {
+    top: 60%;
+    font-size: 3vw;
+    line-height: 5vw;
+  }
+
+  .containerCoin span {
+    font-size: 5vw;
+    font-weight: 900;
+    line-height: 12vw;
+  }
+
+  .homeFooterContent {
+    bottom: 5%;
+  }
+
+  .linkHow, .linkTnc {
+    font-size: 3vw;
+}
+}
+
+@media (min-height: 801px) and (min-width: 1021px) {
+  .containerCoin span {
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 80px;
+    color: #000000;
+  }
+
+  .btnPlay {
+    max-width: 520px;
+}
+}
+
+@media (max-height: 590px) and (min-width: 360px) {
+  .homeFooterContent {
+    bottom: 1%;
+  }
+}
+
+@media (max-height: 590px) {
+  .linkHow, .linkTnc {
+    font-size: 3.2vw;
+}
+}
