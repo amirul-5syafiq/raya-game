@@ -1,16 +1,23 @@
 .ha {
   position: fixed;
-  left: 50%;
+  /* left: 50%; */
+  /* margin-left: 25%; */
   transform-origin: 50% 0;
   z-index: -1;
   display: inline-block;
-  width: 500px;
-  height: 500px;
+  /* width: 500px; */
+  width: 100%;
+  height: 750px;
   padding: 0;
-  margin: 0;
-  background-image: url(../assets/img/sprite-home.png);
+  /* margin: 0; */
+  /* background-image: url(../assets/img/sprite-home.png); */
+  background-image: url(../assets/img/sprite-home-single.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center top;
   /* background-image: url(./img/sprite-home.png); */
 }
+
 
 .bgHome {
   position: fixed;

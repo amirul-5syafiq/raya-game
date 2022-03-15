@@ -3,7 +3,7 @@ import classes from './homepage.module.css';
 import GameEnded from "../components/home/GameEnded";
 import OutForBreak from '../components/home/OutForBreak';
 function Home() {
-    const status = 1;
+    const status = 2;
     let component;
     switch(status) {
         case 1:
