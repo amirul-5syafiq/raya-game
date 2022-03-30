@@ -1,51 +1,122 @@
+/** @format */
+
 .coin {
-  position: absolute;
-  top: 50%;
-  z-index: 1;
-  font-size: 4.5vw;
-  line-height: 8vw;
-  width: 100%;
+	position: absolute;
+	top: 55%;
+	z-index: 1;
+	font-size: 4.5vw;
+	line-height: -10vw;
+	width: 100%;
 }
 
 .containerCoin {
-  position: relative;
-  display: inline-block;
-  width: 38%;
-  max-width: 300px;
-  margin: 0;
-  background-image: url(../../assets/img/chances.png);
-  background-size: 100% 100%;
+	position: relative;
+	display: inline-block;
+	width: 25%;
+	max-width: 300px;
+	margin: 0;
+	background-image: url(../../assets/img/chances.png);
+	background-size: 100% 100%;
+	margin-top: 20px;
 }
+.containerCoin {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 .containerCoin span {
-  font-size: 7vw;
-  font-weight: 900;
-  line-height: 12vw;
+	font-size: 7vw;
+	font-weight: 900;
+	line-height: 12vw;
 }
 
 .homeFooterContent {
-  position: absolute;
-  bottom: 10%;
-  left: 0;
-  right: 0;
-  z-index: 2;
+	position: absolute;
+	bottom: 0%;
+	top: 73%;
+	left: 0;
+	right: 0;
+	z-index: 2;
 }
 
 .btnPlay {
-  width: 80vw;
-  max-width: 420px;
+	width: 80vw;
+	max-width: 420px;
 }
 
-.linkHow, .linkTnc {
-  cursor: pointer;
-  font-size: 4vw;
-  padding-top: 0;
-  margin: 10px;
-  text-decoration: underline;
-  -webkit-user-select: none;
-  user-select: none;
+.linkHow,
+.linkTnc {
+	cursor: pointer;
+	font-size: 4vw;
+	padding-top: 0;
+	margin: 10px;
+	text-decoration: underline;
+	-webkit-user-select: none;
+	user-select: none;
 }
 
-@media (min-width: 601px) {
+.ha {
+	position: fixed;
+	/* left: 50%; */
+	/* margin-left: 25%; */
+	transform-origin: 50% 0;
+	z-index: -1;
+	display: inline-block;
+	/* width: 500px; */
+	width: 100%;
+	height: 750px;
+	padding: 0;
+	/* margin: 0; */
+	/* background-image: url(../assets/img/sprite-home.png); */
+	background-image: url(../../assets/img/sprite-home-single.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center top;
+
+	-webkit-mask: linear-gradient(60deg, #000 30%, #0005, #000 70%) right/300%
+		100%;
+	animation: shimmer 2.5s infinite;
+	color: white;
+}
+
+.firework {
+	position: fixed;
+	display: flex;
+	/* transform: translateX(-50%); */
+	top: 60px;
+	/* right: auto;
+	left: auto; */
+	z-index: -1;
+	width: 100%;
+	height: 50%;
+	padding: 0;
+	background-image: url(../../assets/img/fireworkGif.gif);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center top;
+	/* background: rgba(0, 0, 0, 0.5); */
+	content: "";
+}
+
+.bgHome {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url(../../assets/img/bg-home.png) no-repeat center center;
+	background-size: 100% 100%;
+	z-index: -1;
+}
+@keyframes shimmer {
+	100% {
+		-webkit-mask-position: left;
+	}
+}
+
+/* @media (min-width: 601px) {
   .coin {
     top: 60%;
     font-size: 3vw;
@@ -65,9 +136,9 @@
   .linkHow, .linkTnc {
     font-size: 3vw;
 }
-}
+} */
 
-@media (min-height: 801px) and (min-width: 1021px) {
+/* @media (min-height: 801px) and (min-width: 1021px) {
   .containerCoin span {
     font-size: 36px;
     font-weight: 900;
@@ -90,4 +161,4 @@
   .linkHow, .linkTnc {
     font-size: 3.2vw;
 }
-}
+} */

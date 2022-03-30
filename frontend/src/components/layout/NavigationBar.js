@@ -5,27 +5,6 @@ import classNames from "classnames/bind";
 const cx = classNames.bind(classes)
 
 function NavigationBar() {
-  //   return (
-  //     <header>
-  //       <nav>
-  //         <ul>
-  //           <li>
-  //             <Link to="/">Home</NavLink>
-  //           </li>
-  //           <li>
-  //             <Link to="/myrewards">My Rewards</NavLink>
-  //           </li>
-  //           <li>
-  //             <Link to="/howto">How To Win</NavLink>
-  //           </li>
-  //           <li>
-  //             <Link to="/prizes">Prizes</NavLink>
-  //           </li>
-  //         </ul>
-  //       </nav>
-  //     </header>
-  //   );
-
 
   function navTextClasses(isActive) {
     return cx({

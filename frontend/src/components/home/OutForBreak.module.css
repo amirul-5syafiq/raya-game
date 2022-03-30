@@ -1,31 +1,76 @@
-.bgMainT {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url(../../assets/img/bg-maint.png) no-repeat center center;
-  background-size: 100% 100%;
-  z-index: -1;
-}
 
-.homeFooterContent2 {
+
+.OutForBreak {
   position: absolute;
   left: 0;
   right: 0;
   margin: auto;
-  top: 45%;
+  top: 50%;
   width: 90%;
   max-width: 500px;
+  /* background: url(./img/popup.png) no-repeat center center; */
   background: url(../../assets/img/popup.png) no-repeat center center;
   background-size: 100% 100%;
 }
-.homeFooterContent2 div {
-  padding: 5vh 5vw;
+
+.bgMaint {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+  background: url(../../assets/img/bg-maint.png) no-repeat center center;
+	background-size: 100% 100%;
+	z-index: -1;
 }
-.homeFooterContent2 img {
-  width: 90%;
-  max-width: 500px;
+
+
+.ha {
+	position: fixed;
+	/* left: 50%; */
+	/* margin-left: 25%; */
+	transform-origin: 50% 0;
+	z-index: -1;
+	display: inline-block;
+	/* width: 500px; */
+	width: 100%;
+	height: 750px;
+	padding: 0;
+	/* margin: 0; */
+	/* background-image: url(../assets/img/sprite-home.png); */
+	background-image: url(../../assets/img/sprite-home-single.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center top;
+
+	-webkit-mask: linear-gradient(60deg, #000 30%, #0005, #000 70%) right/300%
+		100%;
+	animation: shimmer 2.5s infinite;
+	color: white;
+}
+
+.firework {
+	position: fixed;
+	display: flex;
+	/* transform: translateX(-50%); */
+	top: 60px;
+	/* right: auto;
+	left: auto; */
+	z-index: -1;
+	width: 100%;
+	height: 50%;
+	padding: 0;
+	background-image: url(../../assets/img/fireworkGif.gif);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center top;
+	/* background: rgba(0, 0, 0, 0.5); */
+	content: "";
+}
+@keyframes shimmer {
+	100% {
+		-webkit-mask-position: left;
+	}
 }
 
 @media (min-width: 601px) {
