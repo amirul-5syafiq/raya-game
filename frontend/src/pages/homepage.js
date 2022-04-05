@@ -5,7 +5,7 @@ import classes from "./homepage.module.css";
 import GameEnded from "../components/home/GameEnded";
 import OutForBreak from "../components/home/OutForBreak";
 import NormalHome from "../components/home/NormalHome";
-// import logo from "../assets/img/fireworkGif.gif";
+
 
 function Home() {
 	const status = 3;

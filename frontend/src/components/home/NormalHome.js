@@ -1,12 +1,13 @@
 /** @format */
 
 import classes from "./NormalHome.module.css";
+import Layout from "../../components/layout/Layout";
 
 import playButtonImage from "../../assets/img/btn-play.png";
 import { Link } from "react-router-dom";
 function NormalHome() {
 	return (
-		<div>
+		<><Layout></Layout><div>
 			<div className={classes.coin}>
 				<div
 					style={{
@@ -54,8 +55,7 @@ function NormalHome() {
 							id='play'
 							className={classes.btnPlay}
 							src={playButtonImage}
-							alt='Play'
-						/>
+							alt='Play' />
 					</Link>
 				</div>
 				<div>
@@ -89,7 +89,7 @@ function NormalHome() {
 			<div className={classes.ha}></div>
 
 			<div className={classes.firework}></div>
-		</div>
+		</div></>
 	);
 }
 

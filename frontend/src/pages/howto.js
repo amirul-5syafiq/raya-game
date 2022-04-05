@@ -1,7 +1,9 @@
+import Layout from "../components/layout/Layout";
+
+
 function HowTo() {
-    return (
-        <div>How To Win</div>
-    )
+  return (
+    <><Layout></Layout><div>HowTo</div></>);
 }
 
-export default HowTo
+export default HowTo;

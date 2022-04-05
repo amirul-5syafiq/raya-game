@@ -1,7 +1,9 @@
+import Layout from "../components/layout/Layout";
+
+
 function Prizes() {
-    return (
-        <div>Prizes</div>
-    )
+  return (
+    <><Layout></Layout><div>prizes</div></>);
 }
 
 export default Prizes;
