@@ -2,58 +2,102 @@
 	width: 80vw;
 	max-width: 420px;
 } */
+.gamebanner {
+	position: absolute;
+	top: 10%;
+	z-index: 1;
+	font-size: 4.5vw;
+	line-height: -10vw;
+	width: 100%;
+}
+
+.Banner {
+	position: absolute;
+	/* change ti to fuixed wih different height changes can make it look the same  ( just the same) */
+	/* display: inline-block; */
+	align-items: center;
+	justify-content: top;
+	width: 50%;
+	height: 100%;
+	max-width: 600px;
+	margin: 0;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center top;
+	background-image: url(../assets/img/game-banner.png);
+	background-size: 100% 100%;
+	/* margin-bottom: 630px; */
+}
+.container {
+	/* position: relative; */
+	/* display: inline-block; */
+	width: 25%;
+	/* max-width: 300px; */
+	margin: 30px;
+	align-items: center;
+	justify-content: top;
+	margin-top: 170px;
+	position: absolute;
+	display: fixed;
+	align-items: center;
+	justify-content: center;
+}
+
+
 .bgplayScreen {
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
-  background: url(../assets/img/bg-playscreen.png) no-repeat center center;
+  background: url(../assets/img/bg-game.png) no-repeat center center;
 	background-size: 100% 100%;
 	z-index: -1;
 }
+
+.rayabanner {
+	position: absolute;
+	top: 57%;
+	bottom: 30%;
+	/* margin-top: 400px; */
+	width: 100%;
+}
+
 .ha {
-	position: fixed;
-	/* left: 50%; */
-	/* margin-left: 25%; */
+	position: absolute;	
 	transform-origin: 50% 0;
 	z-index: -1;
-	display: inline-block;
-	/* width: 500px; */
+	vertical-align: bottom;
+	/* helps to secure the position at the bottom */
+	margin:auto;
+	bottom: -10px;
 	width: 100%;
-	height: 750px;
-	padding: 0;
-	/* margin: 0; */
-	/* background-image: url(../assets/img/sprite-home.png); */
+	height: 600px;
 	background-image: url(../assets/img/sprite-home-single.png);
 	background-repeat: no-repeat;
 	background-size: contain;
-	background-position: center top;
-	margin-top: 340px;
-	-webkit-mask: linear-gradient(60deg, #000 30%, #0005, #000 70%) right/300%
-		100%;
+	background-position: center bottom;
+	bottom: -40px;
+	-webkit-mask: linear-gradient(60deg, #000 30%, #0005, #000 70%) right/300% 100%;
 	animation: shimmer 2.5s infinite;
 	color: white;
 }
 
 .firework {
-	position: fixed;
-	display: flex;
-	/* transform: translateX(-50%); */
-	top: 60px;
-	/* right: auto;
-	left: auto; */
+	position: absolute;
+	bottom: -40px;
+	transform-origin: 50% 0;
+	margin-left: -20px;
+	bottom: -10%;
+	vertical-align: bottom;
 	z-index: -1;
-	width: 100%;
-	height: 50%;
-	padding: 0;
+	width: 110%;
+	height: 55%;
 	background-image: url(../assets/img/fireworkGif.gif);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
-	margin-top: 335px;
-
-	/* background: rgba(0, 0, 0, 0.5); */
+	margin-top: 0px;
 	content: "";
 }
 
